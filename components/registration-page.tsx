@@ -1,0 +1,7 @@
+import { CalendarDays, MapPin, Users } from 'lucide-react'
+import { Shell } from './feloga-site'
+import { RegistrationForm } from './registration-form'
+
+export function RegistrationPage() {
+  return <Shell><section className="registration-hero"><div><span className="eyebrow">Gestion de Crise Tour · 31 octobre 2026</span><h1>Votre voix compte<br /><em>dans la crise.</em></h1><p>Inscrivez-vous à la journée d’ouverture de FELOGA Seed Transformation et rejoignez une communauté de jeunes leaders engagés.</p></div></section><section className="registration-layout"><div className="registration-context"><span className="eyebrow">Une journée pour agir</span><h2>Comprendre. Prendre la parole. Construire.</h2><p>Le Gestion de Crise Tour ouvre FELOGA Seed Transformation, le programme qui fait de l’éloquence un outil d’insertion, d’émancipation et d’avenir pour la jeunesse gabonaise. La journée mêle transmission, prise de parole et réflexion collective face aux défis de notre époque.</p><div className="registration-pillars"><span>Éloquence</span><span>Leadership</span><span>Insertion</span></div><div className="registration-facts"><div><CalendarDays size={20} /><span><b>31 octobre 2026</b><small>Accueil à partir de 08h30</small></span></div><div><MapPin size={20} /><span><b>Institut Français du Gabon</b><small>Libreville, Gabon</small></span></div><div><Users size={20} /><span><b>Places limitées</b><small>Étudiants, talents et organisations</small></span></div></div></div><RegistrationForm /></section></Shell>
+}
